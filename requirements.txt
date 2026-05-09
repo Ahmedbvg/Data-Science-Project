@@ -1,0 +1,27 @@
+# ============================================================
+# requirements.txt
+# Women's E-Commerce Clothing Reviews — ML/DL/RAG Pipeline
+# ============================================================
+# Install with:
+#   pip install -r requirements.txt
+
+# ── Core data science ────────────────────────────────────────
+numpy>=1.24,<2.0
+pandas>=2.0
+scikit-learn>=1.3
+imbalanced-learn>=0.11       # SMOTE oversampling
+joblib>=1.3                  # model serialisation
+matplotlib>=3.7
+seaborn>=0.12
+
+# ── Deep learning ────────────────────────────────────────────
+tensorflow>=2.13,<3.0        # includes Keras; use >=2.13 for .keras save format
+
+# ── RAG / embeddings ─────────────────────────────────────────
+sentence-transformers>=2.7   # SentenceTransformer for dense embeddings
+faiss-cpu>=1.7               # vector similarity search (use faiss-gpu for GPU)
+google-generativeai>=0.7     # Gemini LLM API
+tqdm>=4.66                   # progress bars
+
+# ── Kaggle (optional, only needed for download) ───────────────
+kaggle>=1.6
